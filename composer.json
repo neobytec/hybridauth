@@ -1,0 +1,19 @@
+{
+	"name" : "neobytec/hybridauth",
+	"description" : "Hybridauth with composer",
+	"type" : "library",
+	"license" : "MIT",
+	"keywords" : [
+		"zf2",
+		"hybridauth",
+	],
+	"minimum-stability" : "dev",
+	"require" : {
+		"php" : ">=5.3.3",
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Hybrid" : "vendor/hybridauth"
+		}
+	}
+}
