@@ -25,10 +25,6 @@ class Hybrid_Providers_Facebook extends Hybrid_Provider_Model
 		if ( ! $this->config["keys"]["id"] || ! $this->config["keys"]["secret"] ){
 			throw new Exception( "Your application id and secret are required in order to connect to {$this->providerId}.", 4 );
 		}
-		
-		if (!empty($this->config['scope'])) {
-		    $this->scope = $this->config['scope'];
-		}
 
 		if ( ! class_exists('FacebookApiException', false) ) {
 			require_once Hybrid_Auth::$config["path_libraries"] . "Facebook/base_facebook.php";
